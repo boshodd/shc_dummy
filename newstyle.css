@@ -1,0 +1,196 @@
+body{
+  background-image: url(brownbg.jpg);
+}
+
+.mainlogo{
+  text-align: center;
+  padding-top: 70px;
+
+}
+
+a{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+a:hover{
+    text-decoration: none;
+    color: beige;
+}
+
+h1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.intros{
+  text-align: center;
+  padding-top:40px;
+  padding-bottom:40px;
+  background-color: white;
+}
+.intros img{
+  width: 30%;
+}
+.intros p{
+  margin-top: -30px;
+  padding: 20px;
+}
+
+.sliders{
+  display: flex;
+  
+  justify-content: space-around;
+  background-color: #eeeeee;
+  padding-bottom: 20px;
+}
+
+
+.mass{
+  background-color: white;
+    align-items: center;
+    padding: 50px;
+    font-size: 20px;
+}
+.mynav{
+    width: 100%;
+
+    background: hsla(0, 0%, 93%, 0.63);
+    
+    z-index: 4;
+}
+.mynav img{
+    width: 20%;
+}
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+  }
+
+  .maincardd{
+    margin-top: 90px;
+    text-align: center;
+  }
+  .maincardd h1{
+    font-family: 'Josefin Slab', serif;
+  }
+  .cardd p{
+    padding: 15px;
+    text-align: left;
+  }
+
+  .outchurchpic{
+    width: 400px; 
+    height: 400px;
+  }
+
+  .entrypic{
+    width: 50%;
+  }
+  
+
+  /* foreing */
+    .animate {
+      animation-duration: 0.5s;
+      -webkit-animation-duration: 0.5s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+  
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
+  
+  /* foreign ends */
+
+  /*mobile view */
+
+  @media only screen and (max-width: 600px) {
+
+    .mainlogo img{
+      width: 70%;
+    }
+    .mynav{ 
+        background:#87261e;
+        position: absolute;
+        top: 0;
+        
+    }
+    .mynav img{
+        width: 60%;
+    }
+
+    .intros img{
+      width: 60%;
+    }
+
+    .sliders{
+      width: 100%;
+      display: inline-block;
+    }
+
+    .sliders .card{
+      margin-top:30px;
+    }
+
+    .colimg{
+      display: none;
+    }
+    .cardd img{
+      width: 100%;
+    }
+    .outchurchpic{
+      width: 300px; 
+      height: 300px;
+    }
+  
+  }
