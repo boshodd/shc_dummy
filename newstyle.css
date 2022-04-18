@@ -65,6 +65,14 @@ h1{
     
     z-index: 4;
 }
+.menula{
+  color: black;
+  text-decoration: none;
+      list-style: none;
+}
+.menula:hover {
+  color: #8b8b8b;
+}
 .mynav img{
     width: 20%;
 }
@@ -81,7 +89,8 @@ h1{
   }
 
   .maincardd{
-    margin-top: 90px;
+    margin-top: 0px;
+    background-color: #ffffff;
     text-align: center;
   }
   .maincardd h1{
@@ -101,8 +110,34 @@ h1{
     width: 50%;
   }
   
-
+  .units{
+    background-color: white;
+    padding: 20px;
+  }
+ 
+.zone{
+  padding-top:50px;
+}
   /* foreing */
+
+  .cards {
+    display: flex;
+
+    /* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.cards__item {
+    /* There will be 4 cards per row */
+    flex-basis: 25%;
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
     .animate {
       animation-duration: 0.5s;
       -webkit-animation-duration: 0.5s;
@@ -158,18 +193,23 @@ h1{
 
     .mainlogo img{
       width: 70%;
-      padding-top:30px;
+      padding-top: 30px;
     }
     .mynav{ 
         background:#87261e;
         position: absolute;
         top: 0;
+        color: white;
         
     }
     .mynav img{
         width: 60%;
     }
 
+    .menula{
+      color: rgb(197, 197, 197);
+      
+    }
     .intros img{
       width: 60%;
     }
