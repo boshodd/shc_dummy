@@ -32,11 +32,16 @@ h1{
 .intros{
   text-align: center;
   padding-top:40px;
-  padding-bottom:40px;
+  padding-bottom:20px;
   background-color: white;
 }
 .intros img{
   width: 30%;
+}
+.justforabout{
+ margin:0 auto;
+  width:30%; 
+  text-align: center;
 }
 .intros p{
   margin-top: -30px;
@@ -89,9 +94,10 @@ h1{
   }
 
   .maincardd{
-    padding-top: 40px;
+    
     margin-top: 0px;
     background-color: #ffffff;
+    text-align: center;
     
     
   }
@@ -216,19 +222,27 @@ h1{
   /*mobile view */
 
   @media only screen and (max-width: 600px) {
+  
 
     iframe{
       width: 100%;
       height: 100%;
     }
     .mainlogo img{
-      width: 70%;
+      display: none;
+      position: absolute;
+      top: -20px;
+      background-color: white;
+      z-index: 3;
+      width: 50%;
       padding-top: 30px;
     }
     .mynav{ 
+      z-index: 1;
+      top: 0;
+      
         background:#87261e;
         position: absolute;
-        top: 0;
         color: white;
         
     }
@@ -240,8 +254,11 @@ h1{
       color: rgb(197, 197, 197);
       
     }
-    .intros img{
+    .intros img,.justforabout{
       width: 60%;
+    }
+    .intros:first-of-type{
+      display: none;
     }
 
     .sliders{
